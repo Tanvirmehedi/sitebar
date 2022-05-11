@@ -38,8 +38,5 @@
       "last 1 safari version"
     ]
   },
-  "main": "index.js",
-  "repository": "https://github.com/briancodex/react-sidebar-dropdown.git",
-  "author": "Tanvirmehedi <tjmehedi201@gmail.com>",
-  "license": "MIT"
+  "main": "index.js"
 }
