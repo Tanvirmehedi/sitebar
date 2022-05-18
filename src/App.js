@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Sidebar from "./components/Sidebar";
@@ -7,9 +8,11 @@ import { Reports, ReportsOne, ReportsThree, ReportsTwo } from "./pages/Reports";
 import Team from "./pages/Team";
 
 function App() {
+  const [sidebar, setSidebar] = useState(false);
+
   return (
     <div>
-      <Sidebar />
+      <Sidebar sidebar={sidebar} setSidebar={setSidebar} />
       <Routes>
         <Route path="/overview" element={<Overview />} />
         <Route path="/reports" element={<Reports />} />
