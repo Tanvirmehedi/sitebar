@@ -67,7 +67,11 @@ const Sidebar = ({ sidebar, setSidebar }) => {
               })}
             </SidebarWrap>
           </div>
-          <div className="col-10" onClick={closeSidebar}></div>
+          <div
+            className="col-10"
+            onClick={closeSidebar}
+            style={{ backgroundColor: "#2222222b" }}
+          ></div>
         </SidebarNav>
       </IconContext.Provider>
     </div>
